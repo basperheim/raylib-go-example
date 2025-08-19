@@ -22,7 +22,7 @@ brew install cmake pkg-config
 brew install raylib
 ````
 
-> If `pkg-config` can’t find raylib on Apple Silicon, try:
+> If `pkg-config` can't find raylib on Apple Silicon, try:
 >
 > ```bash
 > export PKG_CONFIG_PATH="/opt/homebrew/lib/pkgconfig"
@@ -48,7 +48,7 @@ sudo apt-get install -y libraylib-dev
 
 ## Project setup
 
-If you’re starting fresh:
+If you're starting fresh:
 
 ```bash
 go mod init github.com/yourname/raylib-go-example
@@ -71,7 +71,7 @@ go build -o raylib-go-example .
 
 ## Troubleshooting
 
-* **linker/undefined reference**: your system likely can’t find `raylib`. Confirm `pkg-config --libs raylib` works.
+* **linker/undefined reference**: your system likely can't find `raylib`. Confirm `pkg-config --libs raylib` works.
 * **CGO disabled**: enable it with `go env -w CGO_ENABLED=1`.
 * **Windows**: run commands from the **MSYS2 MinGW64** shell or ensure the MinGW64 `bin` directory is on `PATH`.
 
